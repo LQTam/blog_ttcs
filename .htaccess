@@ -1,0 +1,18 @@
+	RewriteEngine On
+	#RewriteBase /blog/
+
+	#tags
+	RewriteRule "^t-(.*)$" "tagpost.php?id=$1" [L]
+
+	RewriteRule "^c-(.*)$" "catpost.php?id=$1" [L]
+
+	RewriteRule "^a-(.*)-(.*)$" "archives.php?month=$1&year=$2" [L]
+
+	RewriteCond %{REQUEST_FILENAME} !-d [NC]
+	#NC makes the rule none case sensitive
+	#L make this the last rule that this specific condition will match
+
+	RewriteCond %{REQUEST_FILENAME} !-f [NC]
+	RewriteRule "^(.*).html$" "viewpost.php?id=$1" [QSA,L]
+
+

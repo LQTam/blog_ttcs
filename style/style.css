@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    margin:0;
+    padding:0;
+    background:#f1e7e7
+}
+#wrapper{
+    width: 100%;
+    margin-top:100px;
+}
+img{max-width:100%;}
+.thecontent h2{
+    font-size: 15px;
+}
+.thecontent h3{
+    font-size: 20px;
+}
+
+/* style for image */
+.normalImage{
+    max-width:370px;height:210px;
+}
+
+header,footer{
+    background:rgb(214, 198, 198);
+}
+#logo{width:200px;}
+a.pill{
+    border:1px solid black;
+    border-radius:41%;padding:3px 7px;font-size:14px;
+}
+#content{width:90%;margin:0 auto;}
+/* style for sidebar */
+#aside{border-left:2px solid #f1f1f1;padding-left:10px;}
+/* ====================STYLE FOR PAGINATION================= */
+.pagination li a {
+    border: 1px solid #EEEEEE;
+    height: 25px;
+    font-size: 11px;
+    padding: 4px 8px;
+    margin: 2px;
+    color: black;
+    font-weight: bold;
+}
+.pagination span.disabled {
+    border: 1px solid #EEEEEE;
+    color: #dddddd;
+    padding: 2px 5px;
+    margin: 2px;
+}
+.pagination span.current {
+    border: 1px solid #EEEEEE;
+    padding: 4px 8px;
+    margin: 2px;
+    font-weight: bold;
+    height: 25px;
+    background: #b5b1b1;
+    color: white;
+    font-size: 11px;
+}
+div#pagination {
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+a.pages {
+    padding: 4px 8px;
+    border: 1px solid #f1eded;
+    
+}
+a.pages:not(:first-child) {
+    border-left: none;
+}
+/* a.pages:hover {
+    background: #f1eded;
+    text-decoration: none;
+    font-size: 30px;
+    transition:font-size .5s;
+} */
+a.current,a.current:hover{
+    background: rgb(151, 151, 212);
+}
+/* #copyleft{float:left; margin-left: 10px;margin-top: 10px} */
+.borderForm{border:2px groove white;
+width:60%;margin:0 auto;}
+.clearfix1{clear: both;content:"";display: table;}
+#copyleft,#contact{font-size:20px}
+
+/*===================== FORMAT FOR FORM LOGIN -=============================*/
+#login{background:#1321; width:75%;box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);    margin: 50px auto 0 auto;
+    padding: 10px 0;}
+#login form {
+    box-sizing: border-box;
+    width: 260px;
+    margin: 100px auto 100px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    padding-bottom: 40px;
+    border-radius: 3px;
+  }
+#login form h1 {
+    box-sizing: border-box;
+    padding: 20px;
+    color:white;
+    background: #1abc9c;
+    text-align: center;
+  }
+   
+#login input {
+    margin: 40px 25px;
+    width: 200px;
+    display: block;
+    border: none;
+    padding: 10px 0;
+    border-bottom: solid 1px #1abc9c;
+    background: inherit;
+  }
+  #login  input:focus {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+  }
+  #login  input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+    color: #1abc9c;
+    font-size: 11px;
+    transform: translateY(-15px);
+  }
+   
+  #login   input[type='submit'] {
+    border: none;
+    background: #1abc9c;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px;
+    width: 200px;
+    color: white;
+    margin-left: 25px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+  #login input[type='submit']:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .error {
+	padding: 0.75em;
+	margin: 0.75em;
+	border: 1px solid #990000;
+	max-width: 400px;
+	color: #990000;
+	background-color: #FDF0EB;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+}
+/* about me */
+#info #imgLeft {
+    width: 118px;
+    float: left;
+}
+#info ul{float:left;list-style:none;max-width:180px ; margin-left:20px;padding-left:0;word-wrap: break-word}
+/* style for sideBar */
+.right{max-width: 330px;}
+.clear {
+	clear: both;
+}
+  @media screen and (max-width:540px){
+    .borderForm{border:2px groove white;
+        width:75%;margin:0 auto;}
+}
+@media screen and (max-width:1150px){
+    .borderForm{border:2px groove white;
+        width:90%;margin:0 auto;}
+}
